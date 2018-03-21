@@ -1,0 +1,29 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "time:DateTimeInterval" "http://schema.org/AdministrativeArea" "base:Team" "qb:DataSet" "http://schema.org/CivicStructure" "base:Coach" "http://schema.org/SportsEvent" "time:ProperInterval" "http://schema.org/SportsTeam" "http://schema.org/Organization" "http://schema.org/State" "time:Interval" "http://schema.org/City" "http://schema.org/Event" "qb:Attachable" "foaf:Person" "base:Player" "base:Quarter" "http://schema.org/StadiumOrArena" "base:Match" "qb:Observation" "http://schema.org/Place" "base:Movement" "base:Conference" ; /*classes style*/
+	"http://schema.org/CivicStructure" -> "http://schema.org/Place" [ label = "rdfs:subClassOf" ];
+	"http://schema.org/SportsTeam" -> "http://schema.org/Organization" [ label = "rdfs:subClassOf" ];
+	"time:DateTimeInterval" -> "time:ProperInterval" [ label = "rdfs:subClassOf" ];
+	"base:Quarter" -> "http://schema.org/SportsEvent" [ label = "rdfs:subClassOf" ];
+	"http://schema.org/Event" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"http://schema.org/StadiumOrArena" -> "http://schema.org/CivicStructure" [ label = "rdfs:subClassOf" ];
+	"http://schema.org/State" -> "http://schema.org/AdministrativeArea" [ label = "rdfs:subClassOf" ];
+	"http://schema.org/City" -> "http://schema.org/AdministrativeArea" [ label = "rdfs:subClassOf" ];
+	"http://schema.org/Organization" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"foaf:Person" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"base:Conference" -> "http://schema.org/Place" [ label = "rdfs:subClassOf" ];
+	"qb:DataSet" -> "qb:Attachable" [ label = "rdfs:subClassOf" ];
+	"http://schema.org/SportsEvent" -> "http://schema.org/Event" [ label = "rdfs:subClassOf" ];
+	"base:Match" -> "http://schema.org/SportsEvent" [ label = "rdfs:subClassOf" ];
+	"qb:Observation" -> "qb:Attachable" [ label = "rdfs:subClassOf" ];
+	"base:Player" -> "foaf:Person" [ label = "rdfs:subClassOf" ];
+	"time:ProperInterval" -> "time:Interval" [ label = "rdfs:subClassOf" ];
+	"base:Movement" -> "http://schema.org/SportsEvent" [ label = "rdfs:subClassOf" ];
+	"http://schema.org/AdministrativeArea" -> "http://schema.org/Place" [ label = "rdfs:subClassOf" ];
+	"http://schema.org/Place" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:Team" -> "http://schema.org/SportsTeam" [ label = "rdfs:subClassOf" ];
+	"base:Coach" -> "foaf:Person" [ label = "rdfs:subClassOf" ];
+	"qb:Attachable" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+
+}

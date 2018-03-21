@@ -1,0 +1,380 @@
+{
+  "@context" : {
+    "part_Of" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#part_Of",
+      "@type" : "@id"
+    },
+    "Attachable" : {
+      "@id" : "http://purl.org/linked-data/cube#Attachable"
+    },
+    "intervalFinishes" : {
+      "@id" : "http://www.w3.org/2006/time#intervalFinishes",
+      "@type" : "@id"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "is_made_by" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#is_made_by",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "founded" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#founded",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "made" : {
+      "@id" : "http://xmlns.com/foaf/0.1/made",
+      "@type" : "@id"
+    },
+    "intervalMeets" : {
+      "@id" : "http://www.w3.org/2006/time#intervalMeets",
+      "@type" : "@id"
+    },
+    "points_home_movement" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#points_home_movement",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "nickname" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#nickname",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Organization" : {
+      "@id" : "http://schema.org/Organization"
+    },
+    "StadiumOrArena" : {
+      "@id" : "http://schema.org/StadiumOrArena"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "myersBriggs" : {
+      "@id" : "http://xmlns.com/foaf/0.1/myersBriggs",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "age" : {
+      "@id" : "http://xmlns.com/foaf/0.1/age",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "height" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#height",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "pertain" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#pertain",
+      "@type" : "@id"
+    },
+    "maker" : {
+      "@id" : "http://xmlns.com/foaf/0.1/maker",
+      "@type" : "@id"
+    },
+    "birthday" : {
+      "@id" : "http://xmlns.com/foaf/0.1/birthday",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "mbox" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox",
+      "@type" : "@id"
+    },
+    "hasPart" : {
+      "@id" : "http://purl.org/dc/terms/hasPart"
+    },
+    "points_away" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#points_away",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "familyName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/familyName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Movement" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#Movement"
+    },
+    "lastName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/lastName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "gender" : {
+      "@id" : "http://xmlns.com/foaf/0.1/gender",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Player" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#Player"
+    },
+    "Event" : {
+      "@id" : "http://schema.org/Event"
+    },
+    "Coach" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#Coach"
+    },
+    "has_a_duration" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#has_a_duration",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "xsdDateTime" : {
+      "@id" : "http://www.w3.org/2006/time#xsdDateTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "DateTimeInterval" : {
+      "@id" : "http://www.w3.org/2006/time#DateTimeInterval"
+    },
+    "match_id" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#match_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Interval" : {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    },
+    "Agent" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Agent"
+    },
+    "position" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#position",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "win" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#win",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "percent_lose" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#percent_lose",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "geekcode" : {
+      "@id" : "http://xmlns.com/foaf/0.1/geekcode",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "topic_interest" : {
+      "@id" : "http://xmlns.com/foaf/0.1/topic_interest",
+      "@type" : "@id"
+    },
+    "coaches_a" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#coaches_a",
+      "@type" : "@id"
+    },
+    "valid" : {
+      "@id" : "http://purl.org/dc/terms/valid"
+    },
+    "location" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#location",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "intervalOverlaps" : {
+      "@id" : "http://www.w3.org/2006/time#intervalOverlaps",
+      "@type" : "@id"
+    },
+    "intervalDuring" : {
+      "@id" : "http://www.w3.org/2006/time#intervalDuring",
+      "@type" : "@id"
+    },
+    "plays_a" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#plays_a",
+      "@type" : "@id"
+    },
+    "firstName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/firstName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "currentProject" : {
+      "@id" : "http://xmlns.com/foaf/0.1/currentProject",
+      "@type" : "@id"
+    },
+    "ProperInterval" : {
+      "@id" : "http://www.w3.org/2006/time#ProperInterval"
+    },
+    "CivicStructure" : {
+      "@id" : "http://schema.org/CivicStructure"
+    },
+    "distance" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#distance",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "SportsEvent" : {
+      "@id" : "http://schema.org/SportsEvent"
+    },
+    "SportsTeam" : {
+      "@id" : "http://schema.org/SportsTeam"
+    },
+    "Place" : {
+      "@id" : "http://schema.org/Place"
+    },
+    "Team" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#Team"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "away_participant" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#away_participant",
+      "@type" : "@id"
+    },
+    "realizaes_a" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#realizaes_a",
+      "@type" : "@id"
+    },
+    "knows" : {
+      "@id" : "http://xmlns.com/foaf/0.1/knows",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "has_statistics_data" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#has_statistics_data",
+      "@type" : "@id"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "pastProject" : {
+      "@id" : "http://xmlns.com/foaf/0.1/pastProject",
+      "@type" : "@id"
+    },
+    "percent_win" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#percent_win",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "quarter_number" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#quarter_number",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "points_away_movement" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#points_away_movement",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "logo" : {
+      "@id" : "http://xmlns.com/foaf/0.1/logo",
+      "@type" : "@id"
+    },
+    "date" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#date",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "plan" : {
+      "@id" : "http://xmlns.com/foaf/0.1/plan",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Quarter" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#Quarter"
+    },
+    "City" : {
+      "@id" : "http://schema.org/City"
+    },
+    "State" : {
+      "@id" : "http://schema.org/State"
+    },
+    "lose" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#lose",
+      "@type" : "@id"
+    },
+    "size" : {
+      "@id" : "http://vocab.sindice.net/size"
+    },
+    "DataSet" : {
+      "@id" : "http://purl.org/linked-data/cube#DataSet"
+    },
+    "theme" : {
+      "@id" : "http://xmlns.com/foaf/0.1/theme",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "family_name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/family_name",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "intervalEquals" : {
+      "@id" : "http://www.w3.org/2006/time#intervalEquals",
+      "@type" : "@id"
+    },
+    "page" : {
+      "@id" : "http://xmlns.com/foaf/0.1/page"
+    },
+    "home_participant" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#home_participant",
+      "@type" : "@id"
+    },
+    "is_made" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#is_made",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "intervalStarts" : {
+      "@id" : "http://www.w3.org/2006/time#intervalStarts",
+      "@type" : "@id"
+    },
+    "points_home" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#points_home",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Conference" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#Conference"
+    },
+    "hasFormat" : {
+      "@id" : "http://purl.org/dc/terms/hasFormat"
+    },
+    "is_played_in" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#is_played_in",
+      "@type" : "@id"
+    },
+    "AdministrativeArea" : {
+      "@id" : "http://schema.org/AdministrativeArea"
+    },
+    "belongs_to" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#belongs_to",
+      "@type" : "@id"
+    },
+    "weight" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#weight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "leads" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#leads",
+      "@type" : "@id"
+    },
+    "result" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#result",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Observation" : {
+      "@id" : "http://purl.org/linked-data/cube#Observation"
+    },
+    "Match" : {
+      "@id" : "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#Match"
+    }
+  }
+}

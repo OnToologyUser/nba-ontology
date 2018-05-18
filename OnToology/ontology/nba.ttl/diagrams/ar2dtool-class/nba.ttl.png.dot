@@ -4,14 +4,14 @@ size="1501"
 node [shape = rectangle, color="orange"]; "time:DateTimeInterval" "base:Team" "base:Coach" "time:ProperInterval" "http://schema.org/State" "http://schema.org/City" "foaf:Person" "base:Player" "base:Quarter" "http://schema.org/StadiumOrArena" "base:Match" "qb:Observation" "base:Movement" "base:Conference" ; /*classes style*/
 	"base:Coach" -> "base:Player" [ label = "owl:disjointWith" ];
 	"base:has_a_duration" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
-	"http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements" -> "98f5e1e7f902887d6bf5d9b8c4cf418e" [ label = "dcterms:hasFormat" ];
 	"http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements" -> "http://schema.rdfs.org/all.ttl" [ label = "dcterms:hasFormat" ];
 	"http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements" -> "http://schema.rdfs.org/" [ label = "foaf:page" ];
 	"http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements" -> "http://schema.rdfs.org/all.json" [ label = "dcterms:hasFormat" ];
+	"http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements" -> "3b79e34be18f3fd9891b65bf85438a70" [ label = "dcterms:contributor" ];
 	"http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements" -> "http://www.opendatacommons.org/licenses/pddl/1.0/" [ label = "dcterms:license" ];
 	"http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements" -> "http://schema.org/docs/terms.html" [ label = "dcterms:license" ];
 	"http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements" -> "http://schema.org/" [ label = "dcterms:source" ];
-	"http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements" -> "ff0b41a9d6c9024be89deb10bc151ae9" [ label = "dcterms:contributor" ];
+	"http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements" -> "a97600c02cd7fa395e00e6cb24c3ae4a" [ label = "dcterms:hasFormat" ];
 	"http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements" -> "http://www.w3.org/TR/owl-time" [ label = "rdfs:seeAlso" ];
 	"http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements" -> "http://schema.org/" [ label = "rdfs:seeAlso" ];
 	"http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements" -> "http://github.com/mhausenblas/schema-org-rdf" [ label = "rdfs:seeAlso" ];
@@ -19,8 +19,8 @@ node [shape = rectangle, color="orange"]; "time:DateTimeInterval" "base:Team" "b
 	"http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements" -> "http://schema.rdfs.org/all.rdf" [ label = "dcterms:hasFormat" ];
 	"base:is_played_in" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"foaf:familyName" -> "foaf:family_name" [ label = "owl:equivalentProperty" ];
-	"NULL" -> "base:Match" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "http://schema.org/State" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:Match" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "base:part_Of" [ label = "owl:onProperty" ];
 	"NULL" -> "http://schema.rdfs.org/all-properties.csv" [ label = "dcterms:hasPart" ];
 	"NULL" -> "http://schema.rdfs.org/all-classes.csv" [ label = "dcterms:hasPart" ];
